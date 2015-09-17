@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="<c:url value='/styles/default.css'/>">
 	</head>
 	<body>
+	<jsp:include page="/WEB-INF/views/navbar.jsp"/>
 		<h1>Login</h1>
 		<form action="<c:url value='j_spring_security_check' />" method="POST">
 			<fieldset class="fieldcontainer">

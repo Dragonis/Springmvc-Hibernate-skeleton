@@ -9,7 +9,8 @@
 		<link rel="stylesheet" href="<c:url value='/styles/default.css'/>">
 	</head>
 	<body>
-		<h1>Users</h1>
+	<jsp:include page="/WEB-INF/views/navbar.jsp"/>
+<br>
 		<form:form action="" method="post" modelAttribute="userCommand">
 			<fieldset class="fieldcontainer">
 				<legend>New User</legend>
