@@ -8,7 +8,8 @@
 		<title>Users</title>
 		<link rel="stylesheet" href="<c:url value='/styles/default.css'/>">
 	</head>
-	<body>
+	<div id="register-process">
+
 	<jsp:include page="/WEB-INF/views/navbar.jsp"/>
 <br>
 		<form:form action="" method="post" modelAttribute="userCommand">
@@ -94,9 +95,14 @@
 				</tbody>
 			</table>
 			<p>
-				<input type="submit" value="Update all enabled users">
+				<%--<input type="submit" value="Update all enabled users">--%>
+				<input type="submit" value="Edit">
+				<input type="submit" value="Remove">
 			</p>
 		</form:form>
+</div>
+	<img src="images/11923623_1458028341173612_2726294912836873183_n.jpg" alt="image"/>
+
 		<script src="<c:url value='/scripts/lib/prototype.js'/>"></script>
 		<script src="<c:url value='/scripts/lib/RowSelector.js'/>"></script>
 		<script src="<c:url value='/scripts/user.js'/>"></script>
