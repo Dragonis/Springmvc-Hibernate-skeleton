@@ -21,35 +21,46 @@
 						<form:errors path="name" cssClass="errors" />
 						<form:input path="name" />
 					</div>
+					<br>
 	
 					<div class="field">
 						<form:label for="password" path="password">Password:</form:label>
 						<form:errors path="password" cssClass="errors" />
 						<form:input path="password" />
 					</div>
+					<br>
 
 					<div class="field vertical">
 						<form:label for="email" path="email">Email:</form:label>
 						<form:errors path="email" cssClass="errors" />
 						<form:input path="email" />
 					</div>
+					<br>
 				</div>
 
-				<div class="field">
-					<form:label for="address" path="address">Address:</form:label>
-					<form:errors path="address" cssClass="errors" />
-					<form:textarea path="address" />
-				</div>
+				<%--<div class="field">--%>
+					<%--<form:label for="address" path="address">Address:</form:label>--%>
+					<%--<form:errors path="address" cssClass="errors" />--%>
+					<%--<form:textarea path="address" />--%>
+				<%--</div>--%>
+				<%--<br>--%>
 
 				<div class="field vertical">
 					<input type="submit" value="Create new user">
 				</div>
+				<br>
 
 			</fieldset>
 		</form:form>
 		<form:form action="" method="put" modelAttribute="userGrid">
 			<table>
-				<thead><tr><th><input type="checkbox" class="toggleAll" /></th><th>Name</th><th>Password</th><th>Email</th><th>Address</th></tr></thead>
+				<thead>
+				<tr><th><input type="checkbox" class="toggleAll" /></th>
+					<th>Name</th>
+					<th>Password</th>
+					<th>Email</th>
+					<%--<th>Address</th>--%>
+				</tr></thead>
 				<tbody>
 					<c:forEach var="userEntry" items="${userGrid.userMap}" varStatus="row">
 						<tr>

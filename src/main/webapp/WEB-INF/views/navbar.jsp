@@ -3,8 +3,6 @@
 <!-- Bootstrap Core CSS -->
 <link href="<c:url value='/styles/bootstrap.min.css'/>" rel="stylesheet">
 
-
-
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,17 +29,23 @@
           <a class="page-scroll" href="#download">Turnieje</a>
         </li>
         <li>
-          <a class="page-scroll" href="<c:url value='/user'/>"> Gracze </a>
-        </li>
-        <li>
-          <a class="page-scroll" href="<c:url value='/secret'/>"> Zespoły </a>
-        </li>
-        <li>
           <a class="page-scroll" href="#contact">Contact</a>
         </li>
         <li>
-          <a class="page-scroll" href="<c:url value='j_spring_security_logout'/>"> Logout </a>
+          <a class="page-scroll" id="register-button" href="<c:url value='/user'/>"> Zarejestruj sie </a>
         </li>
+        <li>
+          <a class="page-scroll" id="login-button" href="<c:url value='/secret'/>"> Zaloguj się </a>
+        </li>
+        <%--<li>--%>
+        <%--<a class="page-scroll" href="<c:url value='/user'/>"> Gracze </a>--%>
+        <%--</li>--%>
+        <%--<li>--%>
+          <%--<a class="page-scroll" href="<c:url value='/secret'/>"> Zespoły </a>--%>
+        <%--</li>--%>
+        <%--<li>--%>
+          <%--<a class="page-scroll" href="<c:url value='j_spring_security_logout'/>"> Logout </a>--%>
+        <%--</li>--%>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
