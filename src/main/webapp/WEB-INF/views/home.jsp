@@ -24,8 +24,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<h1 class="brand-heading">Grayscale</h1>
-					<p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p>
+					<h1 class="brand-heading">LOL-FIGHTS</h1>
+					<p class="intro-text">This site gains the all League of Legends players whitch searching for victims, glory and prices with fighting against another players.
+					Tournaments are in every weeks on Sunday, so we welcome you to join to us and have prices and fun. </p>
 					<a href="#about" class="btn btn-circle page-scroll">
 						<i class="fa fa-angle-double-down animated"></i>
 					</a>
@@ -39,22 +40,29 @@
 <section id="about" class="container content-section text-center">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2">
-			<h2>About Grayscale</h2>
-			<p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-			<p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-			<p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
-		</div>
+			<h2>About LOL-FIGHTS</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+			Vestibulum sit amet lacus ut nisi porta fringilla. <br>
+			In tempus elementum metus vitae vehicula. <br>
+			Mauris blandit est ac placerat ornare. <br>
+			Proin lacus justo, convallis non ultricies a, imperdiet vitae dolor. <br>
+			Maecenas molestie justo nibh, eget venenatis libero dapibus et.<br>
+			Donec metus diam, iaculis non viverra nec, porta eget nulla.<br>
+			Curabitur accumsan nisl vitae urna auctor volutpat. <br>
+			Nunc sed condimentum mi. </p> 	</div>
 	</div>
 </section>
 
 <!-- Download Section -->
 <section id="download" class="content-section text-center">
+
 	<div class="download-section">
 		<div class="container">
 			<div class="col-lg-8 col-lg-offset-2">
-				<h2>Download Grayscale</h2>
-				<p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-				<a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+
+				<jsp:include page="/WEB-INF/views/tournaments.jsp"/>
+
+	<a href="/user/" class="btn btn-default btn-lg">Dołącz!</a>
 			</div>
 		</div>
 	</div>
@@ -64,19 +72,19 @@
 <section id="contact" class="container content-section text-center">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2">
-			<h2>Contact Start Bootstrap</h2>
-			<p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-			<p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+			<h2>Kontakt do adminów</h2>
+			<p>W razie problemów z innymi graczami jak np. cheaterami, nieporozumień i innych zastrzeżeń, proszę kontaktować się pisząc maila na poniższy adres!</p>
+			<p><a href="mailto:feedback@startbootstrap.com">admin@admin.com</a>
 			</p>
 			<ul class="list-inline banner-social-buttons">
 				<li>
-					<a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+					<a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
 				</li>
 				<li>
-					<a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+					<a href="#" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Facebook</span></a>
 				</li>
 				<li>
-					<a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+					<a href="#" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
 				</li>
 			</ul>
 		</div>
@@ -89,7 +97,7 @@
 <!-- Footer -->
 <footer>
 	<div class="container text-center">
-		<p>Copyright &copy; Your Website 2015</p>
+		<p>Copyright &copy; Website 2015</p>
 	</div>
 </footer>
 
