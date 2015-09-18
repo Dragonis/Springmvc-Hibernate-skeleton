@@ -61,8 +61,8 @@
 		<%--</jsp:include>	--%>
 
 		<h1>Jesteś zalogowany!</h1>
-		<jsp:include page="/WEB-INF/views/tournaments.jsp"/>
-		<jsp:include page="/WEB-INF/views/teams.jsp"/>
+		<jsp:include page="/WEB-INF/views/partials/tournaments.jsp"/>
+		<jsp:include page="/WEB-INF/views/partials/teams.jsp"/>
 
 	</body>
 </html>

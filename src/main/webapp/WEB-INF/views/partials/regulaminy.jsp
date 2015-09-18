@@ -13,7 +13,7 @@
   </div>
 </div>
 <br>
-<input type="checkbox" disabled="" checked="" value="ON" name="podmienky1">
+<input type="checkbox" disabled="" checked="true" value="ON" name="podmienky1">
 Zgadzam się na przetworzenie moich danych. <br>
 
 <div class="regulamin">
@@ -28,6 +28,6 @@ Zgadzam się na przetworzenie moich danych. <br>
   </div>
 </div>
 <br>
-<input type="checkbox" disabled="" checked="" value="ON" name="podmienky2">
+<input type="checkbox" disabled="" checked="true" value="ON" name="podmienky2">
 Zgadzam się z systemem klasyfikacji
 </div>

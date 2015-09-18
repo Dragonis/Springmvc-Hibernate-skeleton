@@ -60,7 +60,7 @@
 		<div class="container">
 			<div class="col-lg-8 col-lg-offset-2">
 
-				<jsp:include page="/WEB-INF/views/tournaments.jsp"/>
+				<jsp:include page="/WEB-INF/views/partials/tournaments.jsp"/>
 
 	<a href="/user/" class="btn btn-default btn-lg">Dołącz!</a>
 			</div>
