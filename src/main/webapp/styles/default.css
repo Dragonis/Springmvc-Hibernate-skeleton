@@ -108,3 +108,9 @@ div.field label {
 #register-process{
 	float:left;
 }
+.regulamin{
+	height: 130px;
+	/*width: 420px;*/
+	overflow: auto;
+	text-align: justify;
+}

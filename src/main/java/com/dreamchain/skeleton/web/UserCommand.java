@@ -15,7 +15,7 @@ public class UserCommand extends User {
 		setName(user.getName());
 		setPassword(user.getPassword());
 		setEmail(user.getEmail());
-		setAddress(user.getAddress());
+//		setAddress(user.getAddress());
 	}
 
 	public User toUser() {
@@ -24,7 +24,7 @@ public class UserCommand extends User {
 		user.setName(getName());
 		user.setPassword(getPassword());
 		user.setEmail(getEmail());
-		user.setAddress(getAddress());
+//		user.setAddress(getAddress());
 		return user;
 	}
 	

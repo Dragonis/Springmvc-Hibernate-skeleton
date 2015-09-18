@@ -16,7 +16,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<jsp:include page="/WEB-INF/views/navbar.jsp"/>
+<jsp:include page="/WEB-INF/views/partials/navbar.jsp"/>
 
 <!-- Intro Header -->
 <header class="intro">

@@ -373,10 +373,18 @@ body {
 }
 
 #register-button{
-    background-color:purple;
-}
-
-#login-button{
     background-color:blue;
 }
 
+#login-button{
+    background-color:purple;
+}
+
+#logowanie-navbar{
+    float:right;
+    padding-right: 5%;
+}
+
+input{
+    color:black;
+}

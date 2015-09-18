@@ -29,14 +29,14 @@
           <a class="page-scroll" href="#download">Turnieje</a>
         </li>
         <li>
-          <a class="page-scroll" href="#contact">Contact</a>
+          <a class="page-scroll" href="#contact">Kontakt</a>
         </li>
         <li>
           <a class="page-scroll" id="register-button" href="<c:url value='/user'/>"> Zarejestruj sie </a>
         </li>
-        <li>
-          <a class="page-scroll" id="login-button" href="<c:url value='/secret'/>"> Zaloguj się </a>
-        </li>
+        <%--<li>--%>
+          <%--<a class="page-scroll" id="login-button" href="<c:url value='/secret'/>"> Zaloguj się </a>--%>
+        <%--</li>--%>
         <%--<li>--%>
         <%--<a class="page-scroll" href="<c:url value='/user'/>"> Gracze </a>--%>
         <%--</li>--%>
@@ -51,4 +51,27 @@
     <!-- /.navbar-collapse -->
   </div>
   <!-- /.container -->
+  <form action="<c:url value='j_spring_security_check' />" method="POST" id="logowanie-navbar"">
+    <fieldset class="fieldcontainer">
+      <%--<legend>Enter username and password</legend>--%>
+
+      <%--<div class="block">--%>
+        <%--<div class="field">--%>
+        <label>Username:</label>
+        <input type="text" name="j_username">
+        <%--</div>--%>
+
+        <%--<div class="field">--%>
+        <label>Password:</label>
+        <input type="password" name="j_password">
+        <%--</div>--%>
+
+      <%--</div>--%>
+
+      <%--<div class="field vertical">--%>
+      <input type="submit" value="Login">
+      <%--</div>--%>
+
+    </fieldset>
+  </form>
 </nav>

@@ -1,17 +1,15 @@
 package com.dreamchain.skeleton.web;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import com.dreamchain.skeleton.model.User;
+import org.junit.Assert;
+import org.junit.Test;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
-
-import org.junit.Assert;
-import org.junit.Test;
-
-import com.dreamchain.skeleton.model.User;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 public class UserGridTest {
 	
@@ -24,14 +22,14 @@ public class UserGridTest {
 		users.get(0).setName("name1");
 		users.get(0).setPassword("XXX");
 		users.get(0).setEmail("name1@domain.net");
-		users.get(0).setAddress("address1");
+//		users.get(0).setAddress("address1");
 
 		users.add(new User());
 		users.get(1).setName("name2");
 		users.get(1).setPassword("XXX");
 		users.get(1).setEmail("name2@domain.net");
-		users.get(1).setAddress("address2");
-
+//		users.get(1).setAddress("address2");
+//
 		UserGrid userGrid = new UserGrid(users);
 		
 		Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
@@ -49,7 +47,7 @@ public class UserGridTest {
 		users.get(0).setName("name1");
 		users.get(0).setPassword("XXX");
 		users.get(0).setEmail("Invalid Email!!!!");
-		users.get(0).setAddress("address1");
+//		users.get(0).setAddress("address1");
 
 		UserGrid usersCommand = new UserGrid(users);
 		
