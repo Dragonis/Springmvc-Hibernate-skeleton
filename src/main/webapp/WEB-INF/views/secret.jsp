@@ -12,6 +12,7 @@
 	<body>
 
 	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 	<!-- Bootstrap Core CSS -->
 	<link href="<c:url value='/styles/bootstrap.min.css'/>" rel="stylesheet">
@@ -37,7 +38,7 @@
 					</li>
 
 					<li>
-						<a class="page-scroll" id="login-button" href="<c:url value='/j_spring_security_logout'/>"> Wyloguj się </a>
+						<a class="page-scroll" id="login-button" href="<c:url value='/j_spring_security_logout'/>"> Wyloguj się <sec:authentication property="principal.username" /> </a>
 					</li>
 					<%--<li>--%>
 					<%--<a class="page-scroll" href="<c:url value='/user'/>"> Gracze </a>--%>
@@ -61,6 +62,14 @@
 		<%--</jsp:include>	--%>
 
 		<span style="text-align: center"><h1>Jesteś zalogowany!</h1></span>
+
+	<div id="okno_uzytkownika" style="border: solid 2px black; width: 300px;;">
+		Uzytkownik: ${username} <br>
+		Imie: ${name} <br>
+		Nazwisko: ${surname} <br>
+		Kraj: ${country} <br>
+	</div>
+
 		<jsp:include page="/WEB-INF/views/partials/tournaments.jsp"/>
 		<jsp:include page="/WEB-INF/views/partials/teams.jsp"/>
 
