@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
@@ -20,18 +21,30 @@ public class User implements Serializable {
 	private Long id;
 
 	@NotEmpty
-	private String name;
+	private String username;
 
 	@NotEmpty
 	private String password;
-	
+
+	@NotEmpty
+	private String name;
+
+	@NotEmpty
+	private String surname;
+
+	@NotNull
+	private String sex;
+
 	@Email
 	@NotEmpty
 	private String email;
 
-//	@NotNull
-//	private String address;
-	
+	@NotEmpty
+	private String birth;
+
+	@NotEmpty
+	private String country;
+
 
 	public Long getId() {
 		return id;
@@ -57,11 +70,37 @@ public class User implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-//	public String getAddress() {
-//		return address;
-//	}
-//	public void setAddress(String address) {
-//		this.address = address;
-//	}
-	
+	public static long getSerialVersionUID() {
+		return serialVersionUID;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getSurname() {
+		return surname;
+	}
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	public String getBirth() {
+		return birth;
+	}
+	public void setBirth(String birth) {
+		this.birth = birth;
+	}
+	public String getSex() {
+		return sex;
+	}
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
 }

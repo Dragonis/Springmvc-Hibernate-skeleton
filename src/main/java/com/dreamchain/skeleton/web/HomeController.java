@@ -17,7 +17,7 @@ import javax.validation.Valid;
 @RequestMapping(HomeController.URL)
 public class HomeController {
 
-    static final String URL = "/home";
+    static final String URL = "/secret";
 
     @Autowired
     UserService userService;

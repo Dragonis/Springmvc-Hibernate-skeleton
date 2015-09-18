@@ -37,7 +37,7 @@
 					</li>
 
 					<li>
-						<a class="page-scroll" id="login-button" href="<c:url value='j_spring_security_logout'/>"> Wyloguj się </a>
+						<a class="page-scroll" id="login-button" href="<c:url value='/j_spring_security_logout'/>"> Wyloguj się </a>
 					</li>
 					<%--<li>--%>
 					<%--<a class="page-scroll" href="<c:url value='/user'/>"> Gracze </a>--%>
@@ -60,7 +60,7 @@
 		<%--tutaj dodane sa parametry ktore przyjmuje szablon, do renderowania zawartosci--%>
 		<%--</jsp:include>	--%>
 
-		<h1>Jesteś zalogowany!</h1>
+		<span style="text-align: center"><h1>Jesteś zalogowany!</h1></span>
 		<jsp:include page="/WEB-INF/views/partials/tournaments.jsp"/>
 		<jsp:include page="/WEB-INF/views/partials/teams.jsp"/>
 

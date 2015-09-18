@@ -38,7 +38,7 @@
 		<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			<ul class="nav navbar-nav">
 				<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-				<form action="<c:url value='j_spring_security_check' />" method="POST" id="logowanie-navbar"">
+				<form action="<c:url value='/j_spring_security_check' />" method="POST" id="logowanie-navbar"">
 				<fieldset class="fieldcontainer">
 					<label>Username:</label>
 					<input type="text" name="j_username">
@@ -62,9 +62,9 @@
 
 		<div class="block">
 			<div class="field">
-				<form:label for="name" path="name">Name:</form:label>
-				<form:errors path="name" cssClass="errors" />
-				<form:input path="name" />
+				<form:label for="username" path="name">Username:</form:label>
+				<form:errors path="username" cssClass="errors" />
+				<form:input path="username" />
 			</div>
 			<br>
 
@@ -81,6 +81,42 @@
 				<form:input path="email" />
 			</div>
 			<br>
+
+			<div class="field">
+				<form:label for="name" path="name">Name:</form:label>
+				<form:errors path="name" cssClass="errors" />
+				<form:input path="name" />
+			</div>
+			<br>
+
+			<div class="field">
+				<form:label for="surname" path="surname">Surname:</form:label>
+				<form:errors path="surname" cssClass="errors" />
+				<form:input path="surname" />
+			</div>
+			<br>
+
+			<div class="field">
+				<form:label for="sex" path="sex">Sex:</form:label>
+				<form:errors path="sex" cssClass="errors" />
+				<form:input path="sex" />
+			</div>
+			<br>
+
+			<div class="field">
+				<form:label for="birth" path="birth">Date of birth:</form:label>
+				<form:errors path="birth" cssClass="errors" />
+				<form:input path="birth" />
+			</div>
+			<br>
+
+			<div class="field">
+				<form:label for="country" path="country">Country:</form:label>
+				<form:errors path="country" cssClass="errors" />
+				<form:input path="country" />
+			</div>
+			<br>
+
 		</div>
 
 		<%--<div class="field">--%>
@@ -104,10 +140,14 @@
 <form:form action="" method="put" modelAttribute="userGrid" style="clear:both;">
 	<table>
 		<thead><tr><th><input type="checkbox" class="toggleAll" /></th>
-			<th>Name</th>
+			<th>Username</th>
 			<th>Password</th>
 			<th>Email</th>
-			<%--<th>Address</th>--%>
+			<th>Name</th>
+			<th>Surname</th>
+			<th>Sex</th>
+			<th>Date of birth</th>
+			<th>Country</th>
 		</tr></thead>
 		<tbody style="background:white;">
 		<c:forEach var="userEntry" items="${userGrid.userMap}" varStatus="row">
@@ -122,8 +162,8 @@
 					</c:if>
 				</td>
 				<td>
-					<form:errors path="userMap[${userEntry.key}].name" cssClass="errors" />
-					<form:input disabled="${!userEntry.value.selected}" path="userMap[${userEntry.key}].name" />
+					<form:errors path="userMap[${userEntry.key}].username" cssClass="errors" />
+					<form:input disabled="${!userEntry.value.selected}" path="userMap[${userEntry.key}].username" />
 				</td>
 				<td>
 					<form:errors path="userMap[${userEntry.key}].password" cssClass="errors" />
@@ -133,10 +173,26 @@
 					<form:errors path="userMap[${userEntry.key}].email" cssClass="errors" />
 					<form:input disabled="${!userEntry.value.selected}" path="userMap[${userEntry.key}].email" />
 				</td>
-				<%--<td>--%>
-					<%--<form:errors path="userMap[${userEntry.key}].address" cssClass="errors" />--%>
-					<%--<form:input disabled="${!userEntry.value.selected}" path="userMap[${userEntry.key}].address" />--%>
-				<%--</td>--%>
+				<td>
+					<form:errors path="userMap[${userEntry.key}].name" cssClass="errors" />
+					<form:input disabled="${!userEntry.value.selected}" path="userMap[${userEntry.key}].name" />
+				</td>
+				<td>
+					<form:errors path="userMap[${userEntry.key}].surname" cssClass="errors" />
+					<form:input disabled="${!userEntry.value.selected}" path="userMap[${userEntry.key}].surname" />
+				</td>
+				<td>
+					<form:errors path="userMap[${userEntry.key}].sex" cssClass="errors" />
+					<form:input disabled="${!userEntry.value.selected}" path="userMap[${userEntry.key}].sex" />
+				</td>
+				<td>
+					<form:errors path="userMap[${userEntry.key}].birth" cssClass="errors" />
+					<form:input disabled="${!userEntry.value.selected}" path="userMap[${userEntry.key}].birth" />
+				</td>
+				<td>
+					<form:errors path="userMap[${userEntry.key}].country" cssClass="errors" />
+					<form:input disabled="${!userEntry.value.selected}" path="userMap[${userEntry.key}].country" />
+				</td>
 			</tr>
 		</c:forEach>
 		</tbody>

@@ -8,8 +8,8 @@
 		http://www.springframework.org/schema/security/spring-security.xsd">
 
 	<security:http>
- 		<security:form-login login-page="/login" authentication-failure-url="/login?failed"  />
-		<security:logout />
+ 		<security:form-login login-page="/login" default-target-url="/secret" authentication-failure-url="/login?failed"  />
+		<security:logout logout-success-url="/" />
  		<security:intercept-url pattern="/secret" access="ROLE_ADMIN" />
 	</security:http>
 

@@ -31,9 +31,9 @@
         <li>
           <a class="page-scroll" href="#contact">Kontakt</a>
         </li>
-        <li>
-          <a class="page-scroll" id="register-button" href="<c:url value='/user'/>"> Zarejestruj sie </a>
-        </li>
+        <%--<li>--%>
+          <%--<a class="page-scroll" id="register-button" href="<c:url value='/user'/>"> Zarejestruj sie </a>--%>
+        <%--</li>--%>
         <%--<li>--%>
           <%--<a class="page-scroll" id="login-button" href="<c:url value='/secret'/>"> Zaloguj się </a>--%>
         <%--</li>--%>
@@ -51,7 +51,7 @@
     <!-- /.navbar-collapse -->
   </div>
   <!-- /.container -->
-  <form action="<c:url value='j_spring_security_check' />" method="POST" id="logowanie-navbar"">
+  <form action="<c:url value='/j_spring_security_check' />" method="POST" id="logowanie-navbar"">
     <fieldset class="fieldcontainer">
       <%--<legend>Enter username and password</legend>--%>
 
@@ -71,7 +71,8 @@
       <%--<div class="field vertical">--%>
       <input type="submit" value="Login">
       <%--</div>--%>
-
+        <a href="/user">Zarejestruj się</a>
     </fieldset>
+
   </form>
 </nav>

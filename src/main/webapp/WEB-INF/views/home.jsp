@@ -25,7 +25,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<h1 class="brand-heading">LOL-FIGHTS</h1>
-					<p class="intro-text">This site gains the all League of Legends players whitch searching for victims, glory and prices with fighting against another players.
+						<p class="intro-text">This site gains the all League of Legends players whitch searching for victims, glory and prices with fighting against another players.
 					Tournaments are in every weeks on Sunday, so we welcome you to join to us and have prices and fun. </p>
 					<a href="#about" class="btn btn-circle page-scroll">
 						<i class="fa fa-angle-double-down animated"></i>
